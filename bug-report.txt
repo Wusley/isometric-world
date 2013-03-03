@@ -1,0 +1,16 @@
+
+	#2012-05-14
+	-> control.js
+			app.use(express.static(__dirname + '/public'));
+			*static é um nome reservado e devera ser substituido.
+	
+	-> join.jade
+			section.chat
+			*melhorar interface e testar.
+			
+			#form-chat
+			*validar campos, melhorar interface e testar.
+			
+	-> socket.js
+			quando existe 2 usuarios ao mesmo tempo na tela de seleção de cenarios.
+			quando um dos usuarios entram no cenario, o servidor quebra.

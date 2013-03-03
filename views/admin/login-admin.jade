@@ -1,0 +1,18 @@
+<!-- home -->
+link(rel='stylesheet', href='/css/home.css')
+
+div.geral
+
+	section.login
+		form#login(action="admin", method="post")
+			fieldset
+				legend Login
+				
+				label E-mail 
+					input(type="text", name="email")
+					
+				label Senha 
+					input(type="text", name="pass")
+				
+				label
+					input#enviar(type="submit", value="Enviar")	

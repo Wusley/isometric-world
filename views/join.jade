@@ -1,0 +1,36 @@
+<!-- join -->
+link(rel='stylesheet', href='/css/join.css')
+		
+div.geral
+	
+	header.status
+	
+	section.list-scenarios
+		h5 Crie ou Entre em um cenário existente!
+		
+		form
+			label
+				input(type="text", name="name-scenario", placeholder="nome")
+			label
+				input(type="number", name="width-scenario", placeholder="largura")
+			label
+				input(type="number", name="height-scenario", placeholder="altura")
+			label
+				input(type="button", name="create", value="Criar")
+			
+			label
+				select(name="list-scenarios")
+				input(type="button", name="select", value="Entrar")
+
+	iframe#window(src="/scenario/index.html")
+
+	footer.chat
+		section.chat
+
+		form#form-chat(name="", action="", method="")
+			fieldset
+				legend
+				
+				label#write-box
+					input(type="text")
+					input(type="button", value="Enviar")

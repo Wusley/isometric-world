@@ -1,0 +1,122 @@
+	* {
+		margin: 0px;
+		padding: 0px;
+		color: #000;
+	}
+	
+	html,
+	body {
+		height: 100%;
+	}
+	
+	a {
+		text-decoration: none;
+	}
+	
+	fieldset {
+		border: none;
+	}
+	
+	legend {
+		display: none;
+	}
+	
+	body {
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+	
+	header.status {
+		position: absolute;
+		width: 100%;
+		height: 10px;
+		background: rgba(0,0,0,0.7);
+		z-index: 998;
+	}
+	
+	section.geral {
+		position: relative;
+		width: 100%;
+		height: auto;
+		z-index: 1;
+	}
+	
+	footer.chat {
+		position: absolute;
+		bottom: 5px;
+		right: 5px;
+		left: 5px;
+		padding: 5px;
+		width: 500px;
+		height: 18px;
+		background: rgba(0,0,0,0.7);
+		border-radius: 5px;
+		z-index: 998;
+	}
+	
+	form#form-chat {
+		width: 100%;
+		height: 100%;
+	}
+	
+	form#form-chat label {
+		float: lef;
+		height: 18px;
+	}
+	
+	form#form-chat label input {
+		float: left;
+		height: 18px;
+		border: none;
+	}
+	
+	form#form-chat label input[type="text"] {
+		width: auto;
+	}
+	
+	form#form-chat label input[type="button"] {
+		width: auto;
+		margin: 0 5px 0 5px;
+		cursor: pointer;
+	}
+	
+	section.chat {
+		position: absolute;
+		width: 500px;
+		height: auto;
+		background: rgba(0,0,0,0.7);
+		bottom: 28px;
+		left: 0px;
+		overflow: hidden;
+	}	
+	
+	#window {
+		display: none;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		border: #00f 5px solid;
+		overflow: hidden;
+	}
+	
+	canvas {
+		position: absolute;
+		margin: 0px;
+	}
+	
+	canvas.display {
+	    z-index: 2;
+	}	
+	canvas#scenario {
+	    z-index: 1;
+	}	
+	
+	section.list-scenarios {
+		position: absolute;
+		margin: 200px;
+	}
+	
+	section.list-scenarios label {
+		display: block;
+	}

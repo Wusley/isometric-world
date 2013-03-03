@@ -1,0 +1,227 @@
+<link href="/gyulpon/chr/css/style.css" rel="stylesheet" type="text/css" />
+
+<section>
+	<article class="passo-1">
+		<h4 class="titulo">Passo 1</h4>
+		
+		<form name="form-directions" action="" method="">
+			<fieldset>
+				<legend>Dados do personagem:</legend>
+				
+				<label accesskey="n" for="chr-name">Nome: 
+					<input type="text" id="" name="chr-name" />
+					
+					<select id="" name="chr-select"></select>
+					
+					<input type="button" id="action" name="chr-enviar" value="Enviar" />
+					<input type="button" id="reset" name="chr-reset" value="Reset" />
+					<input type="button" id="remove" name="chr-remove" value="Remover" />
+				</label>		
+			</fieldset>
+			
+			<fieldset class="directions">
+				<legend>Movimento:</legend>
+				
+				<svg class="chr-info" width="44" height="44" xmlns="http://www.w3.org/2000/svg">
+					<title>Enviar Edição</title>
+					
+					<circle cx="23" cy="22" r="20" fill="black" />
+					<text x="10" y="26" fill="#fff" font-size="11">Walk</text>
+				</svg>
+				
+				<svg class="svg-directions" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+					<title>Estrela das direções</title>
+
+					<line class="pos-7" x1="100" y1="25" x2="95" y2="35" stroke="#000" />
+					<line class="pos-7" x1="100" y1="25" x2="105" y2="35" stroke="#000" />
+					<line class="pos-7" x1="100" y1="35" x2="100" y2="70" stroke="#000" />
+					
+					<line class="pos-3" x1="100" y1="175" x2="95" y2="165" stroke="#000" />
+					<line class="pos-3" x1="100" y1="175" x2="105" y2="165" stroke="#000" />
+					<line class="pos-3" x1="100" y1="165" x2="100" y2="130" stroke="#000" />
+					
+					<line class="pos-5" x1="22" y1="101" x2="32" y2="96" stroke="#000" />
+					<line class="pos-5" x1="22" y1="101" x2="32" y2="106" stroke="#000" />
+					<line class="pos-5" x1="32" y1="101" x2="67" y2="101" stroke="#000" />
+					
+					<line class="pos-1" x1="177" y1="101" x2="167" y2="96" stroke="#000" />
+					<line class="pos-1" x1="177" y1="101" x2="167" y2="106" stroke="#000" />
+					<line class="pos-1" x1="167" y1="101" x2="132" y2="101" stroke="#000" />
+					
+					<line class="pos-6" x1="22" y1="25" x2="33" y2="28" stroke="#000" />
+					<line class="pos-6" x1="22" y1="25" x2="26" y2="38" stroke="#000" />
+					<line class="pos-6" x1="29" y1="32" x2="74" y2="76" stroke="#000" />
+					
+					<line class="pos-4" x1="22" y1="177" x2="28" y2="164" stroke="#000" />
+					<line class="pos-4" x1="22" y1="177" x2="34" y2="173" stroke="#000" />
+					<line class="pos-4" x1="30" y1="169" x2="75" y2="124" stroke="#000" />
+					
+					<line class="pos-2" x1="180" y1="178" x2="175" y2="165" stroke="#000" />
+					<line class="pos-2" x1="180" y1="178" x2="169" y2="174" stroke="#000" />
+					<line class="pos-2" x1="128" y1="126" x2="173" y2="171" stroke="#000" />
+					
+					<line class="pos-0" x1="177" y1="23" x2="166" y2="27" stroke="#000" />
+					<line class="pos-0" x1="177" y1="23" x2="172" y2="35" stroke="#000" />
+					<line class="pos-0" x1="125" y1="75" x2="170" y2="30" stroke="#000" />
+					
+				</svg> <!-- svg-directions -->
+				
+				<label for="none" accesskey="none">
+					<label accesskey="6" for="pos-6"></label><input type="checkbox" id="" name="pos-6" />				
+					<label accesskey="7" for="pos-7"></label><input class="checkbox-center" type="checkbox" id="" name="pos-7" />
+					<label accesskey="0" for="pos-0"></label><input type="checkbox" id="" name="pos-0" />
+				</label>
+				
+				<label class="label-mid" for="none" accesskey="none">
+					<label accesskey="5" for="pos-5"></label><input type="checkbox" id="" name="pos-5" />
+					<label accesskey="1" for="pos-1"></label><input type="checkbox" id="" name="pos-1" />
+				</label>
+				
+				<label for="none" accesskey="none">
+					<label accesskey="4" for="pos-4"></label><input type="checkbox" id="" name="pos-4" />
+					<label accesskey="3" for="pos-3"></label><input class="checkbox-center" type="checkbox" id="" name="pos-3" />
+					<label accesskey="2" for="pos-2"></label><input type="checkbox" id="" name="pos-2" />
+				</label>
+			</fieldset> <!-- directions -->
+			
+			<fieldset class="directions">
+				<legend>Parado:</legend>
+				
+				<svg class="chr-info" width="44" height="44" xmlns="http://www.w3.org/2000/svg">
+					<title>Enviar Edição</title>
+					
+					<circle cx="23" cy="22" r="20" fill="black"/>
+					<text x="9" y="26" fill="#fff" font-size="11">Stand</text>
+				</svg>
+				
+				<svg class="svg-directions" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+					<title>Estrela das direções</title>
+
+					<line class="pos-15" x1="100" y1="25" x2="95" y2="35" stroke="#000" />
+					<line class="pos-15" x1="100" y1="25" x2="105" y2="35" stroke="#000" />
+					<line class="pos-15" x1="100" y1="35" x2="100" y2="70" stroke="#000" />
+					
+					<line class="pos-11" x1="100" y1="175" x2="95" y2="165" stroke="#000" />
+					<line class="pos-11" x1="100" y1="175" x2="105" y2="165" stroke="#000" />
+					<line class="pos-11" x1="100" y1="165" x2="100" y2="130" stroke="#000" />
+					
+					<line class="pos-13" x1="22" y1="101" x2="32" y2="96" stroke="#000" />
+					<line class="pos-13" x1="22" y1="101" x2="32" y2="106" stroke="#000" />
+					<line class="pos-13" x1="32" y1="101" x2="67" y2="101" stroke="#000" />
+					
+					<line class="pos-9" x1="177" y1="101" x2="167" y2="96" stroke="#000" />
+					<line class="pos-9" x1="177" y1="101" x2="167" y2="106" stroke="#000" />
+					<line class="pos-9" x1="167" y1="101" x2="132" y2="101" stroke="#000" />
+					
+					<line class="pos-14" x1="22" y1="25" x2="33" y2="28" stroke="#000" />
+					<line class="pos-14" x1="22" y1="25" x2="26" y2="38" stroke="#000" />
+					<line class="pos-14" x1="29" y1="32" x2="74" y2="76" stroke="#000" />
+					
+					<line class="pos-12" x1="22" y1="177" x2="28" y2="164" stroke="#000" />
+					<line class="pos-12" x1="22" y1="177" x2="34" y2="173" stroke="#000" />
+					<line class="pos-12" x1="30" y1="169" x2="75" y2="124" stroke="#000" />
+					
+					<line class="pos-10" x1="180" y1="178" x2="175" y2="165" stroke="#000" />
+					<line class="pos-10" x1="180" y1="178" x2="169" y2="174" stroke="#000" />
+					<line class="pos-10" x1="128" y1="126" x2="173" y2="171" stroke="#000" />
+					
+					<line class="pos-8" x1="177" y1="23" x2="166" y2="27" stroke="#000" />
+					<line class="pos-8" x1="177" y1="23" x2="172" y2="35" stroke="#000" />
+					<line class="pos-8" x1="125" y1="75" x2="170" y2="30" stroke="#000" />
+					
+				</svg> <!-- svg-directions -->
+				
+				<label for="none" accesskey="none">
+					<label accesskey="14" for="pos-14"></label><input type="checkbox" id="" name="pos-14" />				
+					<label accesskey="15" for="pos-15"></label><input class="checkbox-center" type="checkbox" id="" name="pos-15" />
+					<label accesskey="8" for="pos-8"></label><input type="checkbox" id="" name="pos-8" />
+				</label>
+				
+				<label class="label-mid" for="none" accesskey="none">
+					<label accesskey="13" for="pos-13"></label><input type="checkbox" id="" name="pos-13" />
+					<label accesskey="9" for="pos-9"></label><input type="checkbox" id="" name="pos-9" />
+				</label>
+				
+				<label for="none" accesskey="none">
+					<label accesskey="12" for="pos-12"></label><input type="checkbox" id="" name="pos-12" />
+					<label accesskey="11" for="pos-11"></label><input class="checkbox-center" type="checkbox" id="" name="pos-11" />
+					<label accesskey="10" for="pos-10"></label><input type="checkbox" id="" name="pos-10" />
+				</label>
+			</fieldset> <!-- directions -->
+		</form> <!-- form-directions -->
+	</article>	
+	
+	<div class="container-box">
+		<ul class="frame">
+			<li class="frame-box"></li> <!-- frame-box -->
+			
+			<li class="address">
+				<label accesskey="" for=""><input type="text" name="address" placeholder="Imagem" id="" /></label>
+			</li> <!-- address -->
+			
+			<li class="height">
+				<label accesskey="" for=""><input type="number" name="height" placeholder="Altura" id="" /></label>
+			</li> <!-- height -->
+			
+			<li class="width">
+				<label accesskey="" for=""><input type="number" name="width" placeholder="Largura" id="" /></label>
+			</li> <!-- width -->
+			
+			<li class="position-y">
+				<label accesskey="" for=""><input type="number" name="position-y" placeholder="Posição Y" id="" /></label>
+			</li> <!-- position-y -->
+			
+			<li class="position-x">
+				<label accesskey="" for=""><input type="number" name="position-x" placeholder="Posição X" id="" /></label>
+			</li> <!-- position-x -->
+			
+			<li class="submit">
+				<input type="hidden" name="id" value="" />
+			</li> <!-- submit -->		
+		</ul> <!-- frame -->
+	</div> <!-- container-box -->
+	
+	<article class="passo-2">
+		<h4 class="titulo">Passo 2</h4>
+		
+		<form name="form-frames" id="" action="" method="">
+			<fieldset class="making">
+				<legend>Construção dos quadros:</legend>
+				
+				<label accesskey="q" for="qtd-frames">Quantidade de quadros desta direção:
+					<input type="text" name="qtd-frames" value="" id="" />
+					<input type="button" name="enviar-qtd-frames" value="OK" id="" />
+				</label>
+				
+				<article class="frames"></article> <!-- frames -->
+				    				
+			</fieldset> <!-- making -->
+		</form> <!-- form-frames -->
+	</article>
+	
+	<article class="passo-3">
+		<h4 class="titulo">Passo 3</h4>
+		
+		<form name="form-effects" id="" action="" method="">
+			<fieldset class="applying">
+				<legend>Effeito animado:</legend>
+				
+				<label accesskey="t" for="timing">Escolha o intervalo para troca dos quadros(em milisegundos) 
+					<input type="number" name="timing" value="" id="" />
+					<input type="button" name="enviar-effects" value="Iniciar" id="" />
+				</label>
+				
+				<article>
+					<div></div>
+					
+					<input type="button" name="enviar-frames" value="Animaco invalida" id="" />
+				</article>
+				
+			</fieldset> <!-- applying -->
+		</form> <!-- form-effects -->
+	</article>
+	
+	<div class="recebe"></div>
+</section>
+
+<script type="text/javascript" src="/gyulpon/chr/js/funcoes.js"></script>
