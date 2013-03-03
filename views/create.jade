@@ -1,0 +1,29 @@
+<!-- home -->
+link(rel='stylesheet', href='/css/style.css')
+
+script(type='text/javascript', src='/gyulpon/js/create.js')
+
+div.geral
+
+	section.create
+		form#create(action="user", method="post")
+			fieldset
+				legend Create
+				
+				label Nome
+					input(name="name")
+					
+				label Nick
+					input(name="nick")
+					
+				label Char
+					select(name="chrId")
+				
+				label E-mail 
+					input(name="email")
+					
+				label Senha 
+					input(name="pass")
+				
+				label
+					input#enviar(type="submit", value="Enviar")					

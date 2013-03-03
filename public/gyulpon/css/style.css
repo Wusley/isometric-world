@@ -1,0 +1,19 @@
+	* { margin: 0px; padding: 0px; color: black;}
+	
+	html, body { height: 100%; }
+	
+	a {
+	  text-decoration: none;
+	}
+	
+	fieldset {
+	  border: none;
+	}
+	
+	.geral {
+	  position: absolute;
+	  width: auto;
+	  height: auto;
+	  color: #fff;
+	  z-index: 999;
+	}
