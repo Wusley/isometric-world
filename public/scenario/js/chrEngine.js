@@ -1,8 +1,8 @@
 var Chr = function(data) {
-	var image			= new Image();
+	var	image			= new Image();
 		image.src		= "images/media/chrs/" + data.chr.background;
 		
-	var nick			= data.nick,
+	var	nick			= data.nick,
 		msg				= [],
 		
 		stoppedX		= true,
@@ -11,7 +11,7 @@ var Chr = function(data) {
 		
 		countMsg		= 0,
 
-		auxCountFrame	= 0,
+		auxCountFrame		= 0,
 		countFrame		= 0,
 		
 		radianos		= 0,
@@ -21,16 +21,16 @@ var Chr = function(data) {
 		direction		= data.chr.direction,
 		positionX		= data.positionX,
 		positionY		= data.positionY,
-		newPositionX	= data.newPositionX,
-		newPositionY	= data.newPositionY,
+		newPositionX		= data.newPositionX,
+		newPositionY		= data.newPositionY,
 		
 		oldX			= null,
 		oldY			= null;
 		
 		return {
 			setOldPosition: function(data) {
-				oldX = data.x;
-				oldY = data.y
+				oldX	= data.x;
+				oldY	= data.y
 			},
 			getOldPosition: function() {
 				return {
@@ -55,7 +55,7 @@ var Chr = function(data) {
 			
 	        	// LIMITE DE QUADROS
 	    		if(countMsg >= 600) {
-	    			msg			= [];
+	    			msg		= [];
 	    			countMsg	= 0;
 	    		}
 			},
@@ -143,8 +143,8 @@ var Chr = function(data) {
 			},
 			updatePosition: function() {
 				var velocity	= direction[did].timing/3,
-					cos			= Math.cos(radianos),
-					sen			= Math.sin(radianos);
+					cos	= Math.cos(radianos),
+					sen	= Math.sin(radianos);
 				
 				positionX += Math.round(Math.cos(radianos) * velocity);
     			positionY += Math.round(Math.sin(radianos) * velocity);
